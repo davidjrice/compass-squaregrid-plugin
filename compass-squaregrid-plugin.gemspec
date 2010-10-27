@@ -15,6 +15,19 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [
     "README.mkdn"
   ]
+  s.files = [
+    ".gitignore",
+     "README.mkdn",
+     "Rakefile",
+     "VERSION",
+     "compass-squaregrid-plugin.gemspec",
+     "lib/squaregrid.rb",
+     "stylesheets/squaregrid/_grid.sass",
+     "stylesheets/squaregrid/_text.sass",
+     "templates/project/grid.sass",
+     "templates/project/manifest.rb",
+     "templates/project/text.sass"
+  ]
   s.homepage = %q{http://github.com/davidjrice/compass-squaregrid-plugin}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]

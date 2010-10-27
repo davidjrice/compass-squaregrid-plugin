@@ -1,23 +1,20 @@
 $squaregrid-bleed-width: 14px !default
 $squaregrid-gutter-width: 28px !default
 $squaregrid-grid-width: 1008px !default
-$squaregrid-columns: 18 !default
+$squaregrid-columns: 35 !default
 
-=grid-wrapper
+=grid-wrap
   margin-left: auto
   margin-right: auto
   width: $squaregrid-grid-width - $squaregrid-bleed-width
   overflow: hidden
-  
-  #container{width:1008px; /* essential */ margin-left:-7px;}
-  
 
 =grid-container
-  margin-left: -$squaregrid-bleed-width
+  margin-left: -$squaregrid-bleed-width/2
   width: $squaregrid-grid-width
 
 =grid-width($n, $cols: $squaregrid-columns, $gutter-width: $squaregrid-gutter-width)
-  width: $squaregrid-grid-width / $cols * $n - $gutter-width
+  width: ($squaregrid-grid-width - $gutter-width) / $cols * $n
 
 =grid-unit-base($gutter-width: $squaregrid-gutter-width)
   display: inline
@@ -25,7 +22,8 @@ $squaregrid-columns: 18 !default
   margin:
     left: $gutter-width / 2
     right: $gutter-width / 2
-
+    bottom: $gutter-width
+    
 =grid($n, $cols: $squaregrid-columns, $gutter-width: $squaregrid-gutter-width)
   +grid-unit-base($gutter-width)
   +grid-width($n, $cols, $gutter-width)
