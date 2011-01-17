@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Rice"]
-  s.date = %q{2010-10-27}
+  s.date = %q{2011-01-17}
   s.description = %q{The Square Grid System is a simple grid system for designers and developers http://thesquaregrid.com/}
   s.email = %q{me@davidjrice.co.uk}
   s.extra_rdoc_files = [
